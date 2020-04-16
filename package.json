@@ -1,0 +1,15 @@
+{
+  "name": "jest-circus-nested-it-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rune Finstad Halvorsen",
+  "license": "MIT",
+  "scripts": {
+    "repro1": "jest --testRunner='jest-circus/runner' index.testcase1.test",
+    "repro2": "jest --testRunner='jest-circus/runner' index.testcase2.test"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "jest-circus": "^25.3.0"
+  }
+}
