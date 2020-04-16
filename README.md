@@ -2,7 +2,7 @@
 
 ## Bug 1
 
-jest-circus allows nested `it` calls, but only when the `it` is not enclosed
+jest-circus allows nested `test` calls, but only when the `test` is not enclosed
 in `describe`.
 
 ### Repro
@@ -11,7 +11,7 @@ in `describe`.
 
 ### Expected
 
-jest-circus warns me that there are nested `it` calls.
+jest-circus warns me that there are nested `test` calls.
 
 ### Actual
 
@@ -19,7 +19,7 @@ The tests are run
 
 ## Bug 2
 
-If there are nested `it` calls, and they are inside a `describe` call,
+If there are nested `test` calls, and they are inside a `describe` call,
 jest-circus warns about the error but with a confusing error message.
 
 ### Repro:

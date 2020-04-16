@@ -1,10 +1,10 @@
 const { getTruthy } = require('./index');
 
 describe('in describe', () => {
-  it('outer test', () => {
+  test('outer test', () => {
     expect(getTruthy()).toBeTruthy();
 
-    it('inner test', () => {
+    test('inner test', () => {
       expect(getTruthy()).toBeTruthy();
     });
   });
